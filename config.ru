@@ -1,3 +1,3 @@
-require './myapp.rb'
+require './web.rb'
 
-run MyApp
+run MyApp.new

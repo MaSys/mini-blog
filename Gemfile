@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'rack'
+gem 'redcarpet'
+gem 'github-markup'
+gem 'sinatra', '~> 1.4.6'
