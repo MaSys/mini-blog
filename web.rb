@@ -15,6 +15,5 @@ class MyApp < Sinatra::Base
   get '/posts/:post' do
     Posts.new("#{params[:post]}").content
   end
-
 end
 
