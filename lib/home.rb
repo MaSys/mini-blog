@@ -1,7 +1,7 @@
 class Home < App
 
   def render
-    ERB.new(File.read('views/layout.html.erb')).result(binding)
+    ERB.new(File.read('views/layouts/layout.erb')).result(binding)
   end
 
   def content

@@ -9,6 +9,7 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="assets/app.js"></script>
     <style>
 html, body{
   height: 100%; 
@@ -54,7 +55,7 @@ html, body{
         <ul>
             <li><a href="/">Home</a></li>
           <% @posts.each do |post| %>
-            <li><a href="/post/<%= post[:file] %>"><%= post[:title] %></a></li>
+            <li><a href="/posts/<%= post[:file] %>"><%= post[:title] %></a></li>
           <% end %>
         </ul>
         </div>
