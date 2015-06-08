@@ -7,7 +7,6 @@ Dir['./lib/*.rb'].each { |file| require file }
 
 class MyApp < Sinatra::Base
   set :root, File.dirname(__FILE__)
-
   get '/' do
     Home.new.content
   end
