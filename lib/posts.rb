@@ -5,7 +5,7 @@ class Posts < App
 
   def content
     render do
-      GitHub::Markup.render(@posts.to_s + '.markdown', File.read('./posts/' + @post.to_s + '.md'))
+      GitHub::Markup.render(@posts.to_s + '.md', File.read('./posts/' + @post.to_s + '.md'))
     end
   end
 end

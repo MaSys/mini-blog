@@ -7,7 +7,7 @@ class Home < App
   def content
     render do
 
-      GitHub::Markup.render('readme.markdown', File.read("#{Sinatra::Application.settings.root}/readme.markdown"))
+      GitHub::Markup.render('readme.md', File.read("#{Sinatra::Application.settings.root}/readme.md"))
     end
   end
 
